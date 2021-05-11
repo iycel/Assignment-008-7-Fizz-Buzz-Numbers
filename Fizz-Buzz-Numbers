@@ -1,0 +1,18 @@
+num = int(input("Enter a number = "))
+fizz_numbers = []
+buzz_numbers = []
+fizzbuzz_numbers = []
+others = []
+for i in range(1,num+1):
+    if i % 3 == 0 and i % 5 == 0:
+        fizzbuzz_numbers.append(i)    
+    elif i % 3 == 0 and i % 5 != 0:
+        fizz_numbers.append(i) 
+    elif i % 3 != 0 and i % 5 == 0:
+        buzz_numbers.append(i) 
+    else:
+        others.append(i)
+print("FizzBuzz Numbers                     = ", fizzbuzz_numbers) 
+print("Fizz Numbers                         = ", fizz_numbers)
+print("FizzBuzz Numbers                     = ", buzz_numbers)
+print("Not Fizz or Buzz or FizzBuzz Numbers = ", others)
